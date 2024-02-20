@@ -1,8 +1,9 @@
-import { Html, Head, Main, NextScript } from "next/document";
+// Core
+import { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
+const Document = (): React.ReactNode => {
   return (
-    <Html lang="en">
+    <Html lang="ru">
       <Head />
       <body>
         <Main />
@@ -10,4 +11,6 @@ export default function Document() {
       </body>
     </Html>
   );
-}
+};
+
+export default Document;

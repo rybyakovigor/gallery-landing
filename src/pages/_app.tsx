@@ -1,6 +1,11 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+// Core
+import type { AppProps } from 'next/app';
 
-export default function App({ Component, pageProps }: AppProps) {
+// Styles
+import '@/ui/styles/index.css';
+
+const App = ({ Component, pageProps }: AppProps): React.ReactNode => {
   return <Component {...pageProps} />;
-}
+};
+
+export default App;

@@ -1,14 +1,14 @@
 // Container
-import HomeContainer from '@/ui/containers/home/Home.container';
+import AboutContainer from '@/ui/containers/about/About.container';
 
 // Components
 import CustomHead from '@/ui/components/custom-head/CustomHead';
 
-export default function Home(): React.ReactNode {
+export default function About(): React.ReactNode {
   return (
     <>
       <CustomHead />
-      <HomeContainer />
+      <AboutContainer />
     </>
   );
 }
