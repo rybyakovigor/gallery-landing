@@ -4,11 +4,23 @@ import HomeContainer from '@/ui/containers/home/Home.container';
 // Components
 import CustomHead from '@/ui/components/custom-head/CustomHead';
 
-export default function Home(): React.ReactNode {
+// Layout
+import MainLayout from '@/layouts/main/Main.layout';
+
+// Types
+import { NextPageWithLayout } from './types/page-with-layout';
+
+const Home: NextPageWithLayout = (): React.ReactNode => {
   return (
     <>
       <CustomHead />
       <HomeContainer />
     </>
   );
-}
+};
+
+Home.getLayout = (page: React.ReactElement): React.ReactNode => {
+  return <MainLayout>{page}</MainLayout>;
+};
+
+export default Home;

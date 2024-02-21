@@ -4,11 +4,23 @@ import AboutContainer from '@/ui/containers/about/About.container';
 // Components
 import CustomHead from '@/ui/components/custom-head/CustomHead';
 
-export default function About(): React.ReactNode {
+// Types
+import { NextPageWithLayout } from './types/page-with-layout';
+
+// Layout
+import MainLayout from '@/layouts/main/Main.layout';
+
+const About: NextPageWithLayout = (): React.ReactNode => {
   return (
     <>
       <CustomHead />
       <AboutContainer />
     </>
   );
-}
+};
+
+About.getLayout = (page: React.ReactElement): React.ReactNode => {
+  return <MainLayout>{page}</MainLayout>;
+};
+
+export default About;
