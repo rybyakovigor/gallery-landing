@@ -1,9 +1,11 @@
 :root {
-  --max-width: 1280px;
+  --max-width: 1140px;
   --horizontal-padding: 24px;
 
   /* Colors */
   --black: #2d2d2d;
+  --white: #fff;
+  --gray: #f3f3f3;
 }
 
 * {
@@ -12,16 +14,34 @@
   margin: 0;
 }
 
+*:focus {
+  outline: 1px solid var(--black);
+}
+
 html,
 body {
   max-width: var(--max-width);
+  height: 100%;
   margin-inline: auto;
   font-family: Epilogue, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.regular-text {
+  font-size: 17px;
+  line-height: 27px;
 }

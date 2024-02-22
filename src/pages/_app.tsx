@@ -1,5 +1,5 @@
 // Types
-import { AppPropsWithLayout } from './types/page-with-layout';
+import { AppPropsWithLayout } from '@/ui/types/page-with-layout';
 
 // Styles
 import '@/ui/styles/index.css';

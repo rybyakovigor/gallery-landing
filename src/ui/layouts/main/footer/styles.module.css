@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--horizontal-padding);
+  padding-bottom: 24px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.social-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.submit-button {
+  margin-top: 12px;
+}

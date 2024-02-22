@@ -30,5 +30,5 @@
 }
 
 .padding {
-  padding: 24px calc(var(--horizontal-padding) + 18px);
+  padding: 24px var(--horizontal-padding);
 }

@@ -5,10 +5,10 @@ import AboutContainer from '@/ui/containers/about/About.container';
 import CustomHead from '@/ui/components/custom-head/CustomHead';
 
 // Types
-import { NextPageWithLayout } from './types/page-with-layout';
+import { NextPageWithLayout } from '../ui/types/page-with-layout';
 
 // Layout
-import MainLayout from '@/layouts/main/Main.layout';
+import MainLayout from '@/ui/layouts/main/Main.layout';
 
 const About: NextPageWithLayout = (): React.ReactNode => {
   return (
