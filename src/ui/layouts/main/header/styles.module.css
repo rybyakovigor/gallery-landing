@@ -5,9 +5,11 @@
 }
 
 .logo {
+  padding: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
+  background: transparent;
 }
 
 .nav-list {
@@ -17,16 +19,14 @@
 }
 
 .list-item {
+  padding: 0;
   font-size: 17px;
   line-height: 27px;
+  background: transparent;
 }
 
 .link-color {
   color: var(--black);
-}
-
-.active {
-  text-decoration: underline;
 }
 
 .padding {

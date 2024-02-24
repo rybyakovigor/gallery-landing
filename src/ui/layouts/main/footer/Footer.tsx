@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 // Components
 import Button from '@/ui/components/button/Button';
+import Input from '@/ui/components/input/Input';
 
 // Assets
 import youtubeIcon from '@/ui/assets/icons/youtube.svg';
@@ -10,7 +11,6 @@ import telegramIcon from '@/ui/assets/icons/telegram.svg';
 
 // Styles
 import styles from './styles.module.css';
-import Input from '@/ui/components/input/Input';
 
 const socialMediaLinks = [
   {
@@ -27,7 +27,7 @@ const socialMediaLinks = [
 
 const Footer = (): React.ReactNode => {
   return (
-    <footer className={`${styles.footer}`}>
+    <footer className={`${styles.footer}`} id="footer">
       <div className={styles['left-side']}>
         <span className="text">
           Если вас очаровали уникальные полотна, в которых каждый штрих соединяет природу и искусство, не упустите шанс

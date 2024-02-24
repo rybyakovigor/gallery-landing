@@ -1,6 +1,11 @@
 // Core
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+
+// Components
+import Button from '@/ui/components/button/Button';
+
+// Routes
+import { Routes } from '@/ui/types/routes';
 
 // Styles
 import styles from './styles.module.css';
@@ -8,11 +13,11 @@ import styles from './styles.module.css';
 const links = [
   {
     name: 'Галерея',
-    href: '/gallery',
+    href: Routes.GALLERY,
   },
   {
     name: 'Обо мне',
-    href: '/about',
+    href: Routes.ABOUT,
   },
 ];
 
@@ -23,20 +28,20 @@ const Header = (): React.ReactNode => {
 
   return (
     <header className={`${styles.header} ${styles.padding}`}>
-      <Link className={`${styles.logo} ${styles['link-color']}`} href="/">
+      <Button as="internalLink" className={`${styles.logo} ${styles['link-color']}`} to={Routes.HOME}>
         Юлия Рыбьякова Арт
-      </Link>
+      </Button>
       <nav>
-        {/* TODO: Добавить анимацию для underline */}
         <ul className={styles['nav-list']}>
           {links.map(({ name, href }) => (
             <li key={name}>
-              <Link
-                className={`${styles['list-item']} ${styles['link-color']} ${isActive(href) ? styles.active : ''}`}
-                href={href}
+              <Button
+                as="internalLink"
+                to={href}
+                className={`${styles['list-item']} ${styles['link-color']} nav-animation ${isActive(href) ? 'active' : ''}`}
               >
                 {name}
-              </Link>
+              </Button>
             </li>
           ))}
         </ul>
