@@ -1,7 +1,8 @@
 .main {
   display: flex;
   flex: 1;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   padding: 0 24px 42px;
   padding-top: 0;
 }

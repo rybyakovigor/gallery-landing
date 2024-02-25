@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 const AboutContainer = (): React.ReactNode => {
   return (
     <main className={styles.main}>
-      <Typography as="h1" className="visually-hidden">
+      <Typography as="h1" variant="h2">
         Обо мне
       </Typography>
 
