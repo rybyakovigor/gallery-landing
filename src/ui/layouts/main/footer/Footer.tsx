@@ -4,6 +4,7 @@ import Image from 'next/image';
 // Components
 import Button from '@/ui/components/button/Button';
 import Input from '@/ui/components/input/Input';
+import Typography from '@/ui/components/typography/Typography';
 
 // Assets
 import youtubeIcon from '@/ui/assets/icons/youtube.svg';
@@ -29,11 +30,11 @@ const Footer = (): React.ReactNode => {
   return (
     <footer className={`${styles.footer}`} id="footer">
       <div className={styles['left-side']}>
-        <span className="regular-text">
+        <Typography>
           Если вас очаровали уникальные полотна, в которых каждый штрих соединяет природу и искусство, не упустите шанс
           стать обладателем эксклюзивной работы. Заполните форму ниже или позвоните, чтобы обсудить желаемый проект или
           приобрести уже готовую картину, добавив в свой интерьер кусочек природной гармонии.
-        </span>
+        </Typography>
         <ul className={styles['social-list']}>
           {socialMediaLinks.map(({ title, href, icon }) => (
             <li key={title}>

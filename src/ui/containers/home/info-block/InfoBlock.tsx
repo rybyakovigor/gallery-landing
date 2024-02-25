@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 // Components
 import Button from '@/ui/components/button/Button';
+import Typography from '@/ui/components/typography/Typography';
 
 // Assets
 import headerPicture from '@/ui/assets/images/main/1.jpg';
@@ -14,11 +15,13 @@ const InfoBlock = (): React.ReactNode => {
   return (
     <section className={styles.container}>
       <div className={styles['text-wrapper']}>
-        <span className={styles.title}>Художественная живопись</span>
-        <span className="regular-text">
+        <Typography as="h1" variant="h1">
+          Художественная живопись
+        </Typography>
+        <Typography>
           Создаю уникальные картины, сочетая акварель, акрил, темперу, текстурные пасты и натуральные элементы, внося
           кусочек природы в городской быт.
-        </span>
+        </Typography>
         <Button as="internalLink" to="#footer">
           Написать
         </Button>

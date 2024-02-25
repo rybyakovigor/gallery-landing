@@ -1,0 +1,16 @@
+.regular {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.h1 {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}

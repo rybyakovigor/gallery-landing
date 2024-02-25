@@ -12,12 +12,6 @@
   color: var(--black);
 }
 
-.title {
-  font-size: 68px;
-  font-weight: 700;
-  line-height: 64px;
-}
-
 .image-wrapper {
   position: relative;
   min-width: 280px;

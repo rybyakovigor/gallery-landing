@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 // Components
 import Button from '@/ui/components/button/Button';
+import Typography from '@/ui/components/typography/Typography';
 
 // Routes
 import { Routes } from '@/ui/types/routes';
@@ -40,7 +41,7 @@ const Header = (): React.ReactNode => {
                 to={href}
                 className={`${styles['list-item']} ${styles['link-color']} nav-animation ${isActive(href) ? 'active' : ''}`}
               >
-                {name}
+                <Typography>{name}</Typography>
               </Button>
             </li>
           ))}

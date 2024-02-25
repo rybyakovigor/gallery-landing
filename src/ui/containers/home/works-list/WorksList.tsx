@@ -1,6 +1,13 @@
 // Core
 import Image from 'next/image';
 
+// Routes
+import { Routes } from '@/ui/types/routes';
+
+// Components
+import Button from '@/ui/components/button/Button';
+import Typography from '@/ui/components/typography/Typography';
+
 // Assets
 import image1 from '@/ui/assets/images/main/works/1.jpg';
 import image2 from '@/ui/assets/images/main/works/2.jpg';
@@ -12,8 +19,6 @@ import ArrowIcon from '@/ui/assets/icons/right-arrow.svg';
 
 // Styles
 import styles from './styles.module.css';
-import Button from '@/ui/components/button/Button';
-import { Routes } from '@/ui/types/routes';
 
 const works = [
   { id: 1, image: image1 },
@@ -26,7 +31,9 @@ const works = [
 const WorksList = (): React.ReactNode => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>Мои работы</h2>
+      <Typography as="h2" variant="h2" className={styles.title}>
+        Мои работы
+      </Typography>
       <ul className={styles.list}>
         {works.map((work) => (
           <li key={work.id} className={styles['list-item']}>
@@ -35,7 +42,9 @@ const WorksList = (): React.ReactNode => {
         ))}
       </ul>
       <Button as="internalLink" to={Routes.GALLERY} className={`${styles['gallery-link']} nav-animation`}>
-        Все работы <Image src={ArrowIcon} alt="" width={20} height={17} />
+        <Typography className={styles['gallery-link-text']}>
+          Все работы <Image src={ArrowIcon} alt="" width={20} height={17} />
+        </Typography>
       </Button>
     </section>
   );
