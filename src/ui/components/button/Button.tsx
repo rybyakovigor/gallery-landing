@@ -18,6 +18,7 @@ type Button = Common & {
 type InternalLink = Common & {
   as: 'internalLink';
   to: string;
+  scroll?: boolean;
 };
 
 type ExternalLink = Common & {
@@ -38,7 +39,7 @@ const Button = (props: PropsType): React.ReactNode => {
       );
     case 'internalLink':
       return (
-        <Link href={props.to} className={`${styles.button} ${props.className}`} scroll={false}>
+        <Link href={props.to} className={`${styles.button} ${props.className}`} scroll={props.scroll}>
           {props.children}
         </Link>
       );

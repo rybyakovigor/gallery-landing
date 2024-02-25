@@ -3,6 +3,7 @@ import Head from 'next/head';
 const CustomHead = (): React.ReactNode => {
   return (
     <Head>
+      {/* TODO: Seo */}
       <title>Юлия Рыбьякова Арт</title>
       <meta
         name="description"
