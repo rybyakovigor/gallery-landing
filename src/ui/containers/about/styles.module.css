@@ -1,0 +1,9 @@
+.main {
+  flex: 1;
+  padding: 24px;
+  padding-top: 0;
+}
+
+.main p {
+  margin-bottom: 24px;
+}

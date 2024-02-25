@@ -15,7 +15,7 @@ const InfoBlock = (): React.ReactNode => {
     <section className={styles.container}>
       <div className={styles['text-wrapper']}>
         <span className={styles.title}>Художественная живопись</span>
-        <span className="text">
+        <span className="regular-text">
           Создаю уникальные картины, сочетая акварель, акрил, темперу, текстурные пасты и натуральные элементы, внося
           кусочек природы в городской быт.
         </span>
