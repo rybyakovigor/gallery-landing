@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  gap: 24px;
   justify-content: space-between;
   padding-inline: var(--horizontal-padding);
   padding-bottom: 24px;
@@ -29,4 +30,27 @@
 
 .submit-button {
   margin-top: 12px;
+}
+
+@media screen and (width < 767px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .social-list {
+    justify-content: center;
+  }
+
+  .left-side {
+    min-width: 100%;
+  }
+
+  .right-side {
+    min-width: 100%;
+  }
+
+  .submit-button {
+    align-self: center;
+    width: 100%;
+  }
 }
