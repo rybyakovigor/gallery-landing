@@ -15,14 +15,14 @@ const InfoBlock = (): React.ReactNode => {
   return (
     <section className={styles.container}>
       <div className={styles['text-wrapper']}>
-        <Typography as="h1" variant="h1">
-          Художественная живопись
+        <Typography as="h1" variant="h1" className={styles.title}>
+          Художественная <br /> живопись
         </Typography>
         <Typography>
           Создаю уникальные картины, сочетая акварель, акрил, темперу, текстурные пасты и натуральные элементы, внося
           кусочек природы в городской быт.
         </Typography>
-        <Button as="internalLink" to="#footer">
+        <Button as="internalLink" to="#footer" className={styles.button}>
           Написать
         </Button>
       </div>

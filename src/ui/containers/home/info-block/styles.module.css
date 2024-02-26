@@ -22,3 +22,49 @@
   object-fit: cover;
   border-radius: 150px 150px 0 0;
 }
+
+@media screen and (width < 991px) {
+  .title {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (width < 810px) {
+  .title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (width < 767px) {
+  .container {
+    position: relative;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .text-wrapper {
+    order: 1;
+  }
+
+  .image-wrapper {
+    width: 280px;
+    height: 280px;
+    margin-inline: auto;
+  }
+
+  .image {
+    border-radius: 50%;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
